@@ -1,6 +1,9 @@
-import {employers, employersNames} from "./script1.js";
-import {sponsors, calcCash, money} from "./script2.js";
+import Sponsors from "./script2.js";
 
+import Employers from "./script1.js";
+
+const employer = new Employers(['Alex', '', 'ludmila', 'Viktor', '', 'oleg', 'iNna', 'Ivan', 'Alex', 'Olga', ' Ann']);
+const sponsor = new Sponsors();
 
 class Business{
     constructor([...[owner, director = 'Victor', cash, emp]]){
@@ -10,16 +13,16 @@ class Business{
         this.emp = emp;
     }
     makeBusiness(){
-    const sumSponsors = [...sponsors.eu,...sponsors.rus, 'unexpected sponsor' ];
+    const sumSponsors = [...sponsor.eu,...sponsor.rus, 'unexpected sponsor' ];
     console.log('We have a business. Owner: ' + this.owner + ', director: ' + this.director + '. Our budget: ' + this.cash + '. And our employers: ' +
     this.emp);
     console.log('And we have a sponsors: ');
     console.log(...sumSponsors);
-    console.log('Note. Be careful with ' + sponsors.eu[0] + ". It's a huge risk.");
+    console.log('Note. Be careful with ' + sponsor.eu[0] + ". It's a huge risk.");
     }
 
 }
 
-const obj = new Business(['Sam', , 12, 13]);
+const obj = new Business(['Sam', ,sponsor.money , employer.employersNames]);
 
 obj.makeBusiness();

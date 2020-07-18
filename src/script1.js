@@ -1,6 +1,11 @@
-const employers = ['Alex', '', 'ludmila', 'Viktor', '', 'oleg', 'iNna', 'Ivan', 'Alex', 'Olga', ' Ann'];
-let employersNames = employers.filter((item) => item.length>0 && item.length != '');
-employersNames = employersNames.map((item) => item.toLocaleLowerCase().trim());
+export default class Employers{
+    constructor(employers){
+        this.employers = employers;
+        this._employersNames=[];
+    }
+    get employersNames(){
+        this._employersNames = this.employers.filter((item) => item.length>0 && item.length != '');
+        return this._employersNames.map((item) => item.toLocaleLowerCase().trim()); 
+    }
 
-
-export {employers, employersNames} ;
+}
