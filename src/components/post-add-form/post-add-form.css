@@ -8,3 +8,13 @@
   flex-grow: 1;
   margin-right: 3px;
 }
+
+.date{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 0.8em;
+  margin-right: 10px;
+}
