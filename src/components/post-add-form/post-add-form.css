@@ -3,6 +3,7 @@
 }
 
 .bottom-panel .new-post-label {
+  color:red;
   width: auto;
   flex-grow: 1;
   margin-right: 3px;
