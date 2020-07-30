@@ -10,7 +10,7 @@ const App = ()=>{
     const dataList = [
         {text: 'I\'m happy', id:'wq'},
         {text: 'I like music', id: 'we'},
-        {text: 'I want to go aboard',id: 'wa'}
+        {text: 'I want to go aboard',id: 'wa'},
     ]
     return(
         <div className="app">

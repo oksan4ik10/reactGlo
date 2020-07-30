@@ -30,6 +30,7 @@ import  './post-list-item.css';
             const date = new Date();
             const newDate = addZero(date.getDate().toString()) + '.'+ addZero((date.getMonth()+1).toString()) + '.'+ date.getFullYear().toString()+' г.';
             const {text} = this.props.dataItem;
+
             const {important, like} = this.state;
             let classNames = "app-list-item d-flex justify-content-between";
             if (important){
